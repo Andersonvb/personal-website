@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #005A8D;
+  --secondary-color: #022E57;
+  --third-color: #FF96AD;
+  --fourth-color: #FFF5FD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main Container */
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Navbar */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.navbar__ul {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.navbar__span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar__btn {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.navbar__btn i {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Pseudo Classes */
+
+.navbar__li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar__span:hover {
+  color: var(--primary-color);
+}
+
+/* Main Page */
+
+.main-page {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-page__text {
+  width: 80%;
+  font-size: 20px;
+}
+.main-page__text h1 {
+  margin: 20px 0;
+}
+
+.main-page__highlighted-text {
+  color: var(--primary-color);
+}
+
+.main-page__img {
+  width: 80%;
+}
+
+.main-page__img img {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 600px) {
+
+  .navbar__ul {
+    width: 75%;
+    position: static;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .hidden {
+    display: flex;
+  }
+
+  .navbar__btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 1200px;
+  }
+
+  .main-page {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .main-page__text {
+    width: 50%;
+    font-size: 30px;
+  }
+  
+  .main-page__highlighted-text {
+    color: var(--primary-color);
+  }
+  
+  .main-page__img {
+    width: 50%;
+  }
+}
