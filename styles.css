@@ -22,7 +22,14 @@ a {
   text-decoration: none;
 }
 
-/* Main Container */
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* General */
+
+/* General Main Container */
 
 .main-container {
   width: 100%;
@@ -31,16 +38,11 @@ a {
   flex-direction: column;
 }
 
-/* Navbar */
-
-body {
-  display: flex;
-  justify-content: center;
-}
+/* General Navbar */
 
 .navbar {
   width: 100%;
-  padding: 30px 30px;
+  padding: 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,16 +52,13 @@ body {
 
 .navbar__ul {
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: -140px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   flex-direction: column;
   transition: top 1s;
-
+  z-index: 1;
 }
 
 .navbar__ul li {
@@ -70,6 +69,10 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fff;
+  z-index: 3;
 }
 
 .navbar__btn {
@@ -80,22 +83,6 @@ body {
 .navbar__btn i {
   font-size: 2rem;
 }
-
-/* Specials classes */
-
-.down-152-top {
-  top: 93px;
-}
-
-.down-152-margin {
-  margin-top: 152px;
-}
-
-.hidden {
-  display: none;
-}
-
-/* Navbar Pseudo Classes */
 
 .navbar__li a:hover {
   color: var(--primary-color);
@@ -157,60 +144,111 @@ body {
   50% {border: transparent}
 }
 
-/* Projects Section */
-
-.projects-section {
-  margin: 50px 0;
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.projects-section__title {
-  font-size: 20px;
-  margin: 0 0 30px 0;
-}
-
-.projects-section__container {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.project-card {
-  width: 100%;
-  min-height: 350px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 0 8px 0 #000;
-  cursor: pointer;
-}
-
-.project-card__img {
-  margin-bottom: 20px;
-  width: 300px;
-}
-
-.project-card__img img {
-  max-width: 300px;
-}
-
-.project-card p {
-  font-size: 20px;
-}
 
 /* Media queries */
 
-/* 600px < x < 1200px */
+/* Mobile Devices (320px - 480px) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar__ul {
+    position: absolute;
+    left: 0;
+    top: -140px;
+  }
+}
+
+/* iPads, Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar__ul {
+    position: absolute;
+    left: 0;
+    top: -140px;
+  }
+}
+
+/* Small screens, laptops (769px - 1024px)*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar__ul {
+    width: 75%;
+    position: static;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .navbar__btn {
+    display: none;
+  }
+}
+
+/* Desktops, large Screens () */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .navbar__ul {
+    width: 75%;
+    position: static;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .navbar__btn {
+    display: none;
+  }
+}
+
+/* Extra large Screens, TV */
+@media screen and (min-width: 1200px) {
+  .navbar__ul {
+    width: 75%;
+    position: static;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .navbar__btn {
+    display: none;
+  }
+
+  .main-container {
+    width: 1200px;
+  }
+
+  .main-page {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .main-page__text {
+    width: 50%;
+    font-size: 30px;
+  }
+
+  .main-page__subtext {
+    font-size: 30px;
+  }
+  
+  .main-page__img {
+    width: 50%;
+  }
+}
+
+/* Specials Classes */
+
+.top-93 {
+  top: 93px;
+}
+
+.margin-top-152 {
+  margin-top: 152px;
+}
+
+
+
+/*
 
 @media screen and (min-width: 600px) {
 
@@ -236,8 +274,6 @@ body {
   }
 
 }
-
-/* 1200px < x */
 
 @media screen and (min-width: 1200px) {
   .main-container {
@@ -266,16 +302,6 @@ body {
     width: 50%;
   }
 
-  .projects-section__title {
-    font-size: 30px;
-  }
-
-  .projects-section__container {
-    flex-direction: row;
-  }
-
-  .project-card {
-    width: 350px;
-    margin: 20px;
-  }
+  
 }
+*/
