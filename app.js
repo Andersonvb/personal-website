@@ -1,5 +1,4 @@
 // Navbar Button
-
 const navbarBtn = document.querySelector('.navbar__btn');
 
 navbarBtn.addEventListener('click', () => {

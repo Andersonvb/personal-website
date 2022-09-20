@@ -161,14 +161,15 @@ body {
   width: 100%;
   min-height: 400px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .project-card {
-  width: 100%;
-  height: 550px;
+  width: 80%;
+  height: 580px;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -249,24 +250,106 @@ body {
   transform: scale(1.4);
 }
 
-#js-logo:hover {
+#js-logo {
+  text-shadow: 1px 1px #000;
   color: #f7df1e;
 }
 
+#html-logo {
+  text-shadow: 1px 1px #000;
+  color: #f06529;
+}
+
+#css-logo {
+  text-shadow: 1px 1px #000;
+  color: #264de4;
+}
+
+#react-logo {
+  text-shadow: 1px 1px #000;
+  color: #61DBFB;
+}
+
+#node-logo {
+  text-shadow: 1px 1px #000;
+  color: #3c873a;
+}
+
+#js-logo:hover {
+  color: #f7df1e;
+  text-shadow: 1px 1px #000;  
+}
+
 #html-logo:hover {
-  color: #f06529 ;
+  color: #f06529;
+
 }
 
 #css-logo:hover {
   color: #264de4;
+
 }
 
 #react-logo:hover {
   color: #61DBFB;
+
 }
 
 #node-logo:hover {
   color: #3c873a;
+
+}
+
+/* ===============
+   Contact Section
+   =============== */
+
+.contact-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 100%;
+}
+
+.contact-section__text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-section__title {
+  margin: 20px 0;
+}
+
+.contact-section__image {
+  min-width: 50%;
+}
+
+.contact-section__image img {
+  min-width: 100%;
+}
+
+.contact-section__logos {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  gap: 100px;
+  padding: 50px 0;
+}
+
+.contact-section__logos i {
+  transition: all .5s;
+}
+
+.contact-section__logos i:hover {
+  color: var(--primary-color);
 }
 
 
@@ -321,6 +404,10 @@ body {
     min-height: 400px; 
     width: 100%;
   }
+
+  .contact-section__title {
+    font-size: 20px;
+  }
 }
 
 /* iPads, Tablets (481px - 768px) */
@@ -353,6 +440,9 @@ body {
 
   .projects-section__container {
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
   }
 
   .project-card {
@@ -385,6 +475,18 @@ body {
   
   .about-logo {
     font-size: 5.3rem;
+  }
+
+  .contact-section {
+    flex-direction: row;
+  }
+
+  .contact-section__text {
+    padding: 0 90px;
+  }
+
+  .contact-section__title {
+    font-size: 30px;
   }
 
 }
