@@ -327,14 +327,6 @@ body {
   margin: 20px 0;
 }
 
-.contact-section__image {
-  min-width: 50%;
-}
-
-.contact-section__image img {
-  min-width: 100%;
-}
-
 .contact-section__logos {
   align-items: center;
   display: flex;
@@ -350,6 +342,14 @@ body {
 
 .contact-section__logos i:hover {
   color: var(--primary-color);
+}
+
+.twitter-logo {
+  color: #1DA1F2;
+}
+
+.linkedin-logo {
+  color: #0077b5;
 }
 
 
