@@ -119,9 +119,12 @@ body {
   margin: 20px 0;
 }
 
-.main-page__img img {
-  width: 100%;
+.main-page__img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
+
 
 .main-page__subtext {
   animation: typing 5s steps(23), blink .5s infinite step-end alternate;
@@ -379,8 +382,16 @@ body {
     font-size: 20px;
   }
 
+  .main-page__text {
+    margin-bottom: 50px;
+  }
+
   .main-page__img {
-    width: 80%;
+    width: 100%;
+  }
+  .main-page__img img {
+    width: 70%;
+    border-radius: 100%;
   }
 
   .projects-section__title {
