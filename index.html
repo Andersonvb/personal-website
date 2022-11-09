@@ -1,132 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AndersonDev</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/fbcfe335b3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/fbcfe335b3.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- === Main Container === -->
     <main class="main-container">
+      <!-- === Navbar === -->
+      <nav class="navbar">
+        <a class="navbar__span" href="#main">Anderson Valencia</a>
 
-        <!-- === Navbar === -->
-        <nav class="navbar">
-            <a class="navbar__span" href="#main">Anderson Valencia</a>
+        <ul class="navbar__ul">
+          <li class="navbar__li"><a href="#projects">Projects</a></li>
+          <li class="navbar__li"><a href="#about-section">About</a></li>
+          <li class="navbar__li"><a href="#contact-section">Contact</a></li>
+        </ul>
 
-            <ul class="navbar__ul">
-                <li class="navbar__li"><a href="#projects">Projects</a></li>
-                <li class="navbar__li"><a href="#about-section">About</a></li>
-                <li class="navbar__li"><a href="#contact-section">Contact</a></li>
-            </ul>
+        <button class="navbar__btn"><i class="fa-solid fa-bars"></i></button>
+      </nav>
 
-            <button class="navbar__btn"><i class="fa-solid fa-bars"></i></button>
-        </nav>
-
-        <!-- === Main Page === -->
-        <div class="main-page" id="main">
-            
-            <div class="main-page__text">
-                <h1>I'm a <span class="blue-text">full stack</span> developer who builds user-friendly websites.</h1>
-                <span class="main-page__subtext">console.log("Hi! 😄");</span>
-            </div>
-
-            <div class="main-page__img">
-                <!-- <img src="./images/img.svg" alt="Image"> -->
-            </div>
-
+      <!-- === Main Page === -->
+      <div class="main-page" id="main">
+        <div class="main-page__text">
+          <h1>
+            I'm a <span class="blue-text">full stack</span> developer who builds
+            user-friendly websites.
+          </h1>
+          <span class="main-page__subtext">console.log("Hi! 😄");</span>
         </div>
 
+        <div class="main-page__img">
+          <!-- <img src="./images/img.svg" alt="Image"> -->
+        </div>
+      </div>
 
-        <!-- === Projects Section === -->
+      <!-- === Projects Section === -->
 
-        <section class="projects-section" id="projects">
-            <div class="projects-section__title">
-                <h2>My Projects</h2>
+      <section class="projects-section" id="projects">
+        <div class="projects-section__title">
+          <h2>My Projects</h2>
+        </div>
+
+        <!-- Project Container -->
+        <div class="projects-section__container">
+          <a
+            href="https://weather-website-2r8jqkg2w-andersonvb.vercel.app/"
+            target="_blank"
+            class="project-card"
+          >
+            <div class="project-card__img">
+              <img src="./images/weather-image.png" alt="Project-image" />
             </div>
+            <p>Simple weather website built with Reactjs and Tailwindcss.</p>
+          </a>
 
-            <!-- Project Container -->
-            <div class="projects-section__container">
-
-                <a href="https://github.com/Andersonvb/weather-website" target="_blank" class="project-card">
-                    <div class="project-card__img">
-                        <img src="./images/weather-image.png" alt="Project-image">
-                    </div>
-                    <p>Simple weather website built with Reactjs and Tailwindcss.</p>
-                </a>
-
-                <div class="project-card"> 
-                    <div class="project-card__img">
-                        <img src="./images/img.svg" alt="Project-image">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-
-                <div class="project-card"> 
-                    <div class="project-card__img">
-                        <img src="./images/img.svg" alt="Project-image">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-
+          <a
+            href="https://tip-calculator-avjxcjqa5-andersonvb.vercel.app/"
+            target="_blank"
+            class="project-card"
+          >
+            <div class="project-card__img">
+              <img src="./images/tip-calculator-app.png" alt="Project-image" />
             </div>
-        </section>
+            <p>Simple Tip Calculator App built with React.</p>
+          </a>
 
-
-        <!-- === About Section === -->
-        <section class="about-section" id="about-section">
-
-            <div class="about-section__information">
-                <div class="about-section__title">
-                    <h2>About <span class="blue-text">me</span></h2>
-                </div>
-                <p>I have been programming for more than 6 years in languages such as Java and Python, however, it was thanks to Javascript and web development that I developed a great passion for programming and today I am constantly learning.</p>
+          <div class="project-card">
+            <div class="project-card__img">
+              <img src="./images/advice-generator.png" alt="Project-image" />
             </div>
+            <p>A simple advice generator built using an API.</p>
+          </div>
+        </div>
+      </section>
 
-            <div class="about-section__logos">
-                <div>
-                    <i id="css-logo" class="fa-brands fa-css3-alt about-logo"></i>
-                    <i id="html-logo" class="fa-brands fa-html5 about-logo" about-logo></i>
-                </div>
-                <div>
-                    <i id="js-logo" class="fa-brands fa-js about-logo"></i>
-                </div>
-                <div>
-                    <i id="react-logo" class="fa-brands fa-react about-logo"></i>
-                    <i id="node-logo" class="fa-brands fa-node-js about-logo"></i>
-                </div>
-                
-            </div>
+      <!-- === About Section === -->
+      <section class="about-section" id="about-section">
+        <div class="about-section__information">
+          <div class="about-section__title">
+            <h2>About <span class="blue-text">me</span></h2>
+          </div>
+          <p>
+            I have been programming for more than 6 years in languages such as
+            Java and Python, however, it was thanks to Javascript and web
+            development that I developed a great passion for programming and
+            today I am constantly learning.
+          </p>
+        </div>
 
-        </section>
+        <div class="about-section__logos">
+          <div>
+            <i id="css-logo" class="fa-brands fa-css3-alt about-logo"></i>
+            <i
+              id="html-logo"
+              class="fa-brands fa-html5 about-logo"
+              about-logo
+            ></i>
+          </div>
+          <div>
+            <i id="js-logo" class="fa-brands fa-js about-logo"></i>
+          </div>
+          <div>
+            <i id="react-logo" class="fa-brands fa-react about-logo"></i>
+            <i id="node-logo" class="fa-brands fa-node-js about-logo"></i>
+          </div>
+        </div>
+      </section>
 
-
-
-        <!-- === Contact Section ==== -->
-        <section class="contact-section" id="contact-section">
-            <div class="contact-section__text">
-                <div class="contact-section__title">
-                    <h2>Get in touch</h2>
-                </div>
-                <p>Contact me on my social networks.</p>
-                <div class="contact-section__logos">
-                    <i class="fa-brands fa-linkedin linkedin-logo"></i>
-                    <i class="fa-brands fa-twitter twitter-logo"></i>
-                </div>
-            </div>
-        </section>
-
+      <!-- === Contact Section ==== -->
+      <section class="contact-section" id="contact-section">
+        <div class="contact-section__text">
+          <div class="contact-section__title">
+            <h2>Get in touch</h2>
+          </div>
+          <p>Contact me on my social networks.</p>
+          <div class="contact-section__logos">
+            <a
+              href="https://www.linkedin.com/in/anderson-valencia-bermudez/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin linkedin-logo"></i
+            ></a>
+            <a href="https://www.twitter.com/anderson_v_b" target="_blank"
+              ><i class="fa-brands fa-twitter twitter-logo"></i>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
